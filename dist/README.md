@@ -16,20 +16,33 @@
 
 2. config.ini文件中的主机类型分为两类，一类为要拉取的文件所在的主机，一类为待分发文件的主机，它们的配置书写基本格式如下:
 
-3. 要拉取的文件所在的主机：
-[OriginHost] 
-ip=ip地址 
-port=ssh端口号 
-user=用户名 
-filepath=要拉去的文件的绝对路径 
-filname=要拉取得文件名 
+3. 要拉取的文件所在的主机
+	`
+	[OriginHost] 
+
+	ip=ip地址 
+
+	port=ssh端口号 
+
+	user=用户名 
+
+	filepath=要拉去的文件的绝对路径 
+
+	filname=要拉取得文件名 
+	`
 
 4. 待分发文件的主机 
-[HostName] 
-ip=ip地址 
-port=端口号 
-user=远程用户 
-storepath=远程主机存储文件的位置 
+	`
+	[HostName] 
+
+	ip=ip地址 
+
+	port=端口号 
+
+	user=远程用户 
+
+	storepath=远程主机存储文件的位置 
+	`
 
 5. 以上所列为必须的配置项，其中，要拉取的文件所在的主机的名称必须为[OriginHost]，待分发文件的主机的名称可自定义。
 
